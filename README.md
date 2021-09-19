@@ -6,4 +6,5 @@
 </div>
 
 ### dependencies
-* @grpc/grpc-js
+* @grpc/grpc-js - main dependency
+* @grpc/proto-loader - load the .proto files
