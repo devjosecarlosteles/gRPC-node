@@ -1,11 +1,13 @@
 syntax = "proto3"; // version of portokoll buffer language
 
+package notes;
+
+message Void {}
+
 service NoteService {
   // method accepting Empty on empty message and returning NoteList
-  rpc List (Empty) returns (NoteList) {}
+  rpc List (Void) returns (NoteList) {};
 }
-
-message Empty {}
 
 message Note {
   // model with 3 properties (id,title and content). Note: The values ​​1,2 and 3 are the indexes of each property
